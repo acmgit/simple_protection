@@ -116,13 +116,12 @@ s_protect.register_subcommand("radar", function(name)
 		"label[7,2.25;" .. S("Your area") .. "]" ..
 		"image[6,3;1,1;simple_protection_radar.png^"
 			.. colorize_area(nil, "other") .. "]" ..
-		"label[7,3;" .. S("Area claimed\nNo access for you") .. "]" ..
+		"label[7,3;" .. S("Area claimed") .. "\n" .. S("No access for you") .. "]" ..
 		"image[6,4;1,1;simple_protection_radar.png^"
 			.. colorize_area(nil, "*all") .. "]" ..
 		"label[7,4.25;" .. S("Access for everybody") .. "]" ..
 		"image[6,5;1,1;simple_protection_radar_down.png]" ..
 		"image[7,5;1,1;simple_protection_radar_up.png]" ..
-		"label[6,6;" .. S("One area unit (@1m) up/down\n-> no claims on this Y level",
-			s_protect.claim_height) .. "]"
+		"label[6,6;" .. S("One area unit (@1m) up/down", s_protect.claim_height) .. "\n" .. S("no claims on this Y level") .. "]"
 	)
 end)
